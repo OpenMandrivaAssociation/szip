@@ -64,3 +64,10 @@ rm -rf %{buildroot}/%{_libdir}/libsz.a
 %files devel
 %attr(755,root,root) %{_libdir}/libsz.so
 %{_includedir}/*.h
+
+
+%changelog
+* Thu Dec 22 2011 Alexander Khrukin <akhrukin@mandriva.org> 2.1-1
++ Revision: 744480
+- imported package szip
+
