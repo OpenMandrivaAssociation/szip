@@ -1,6 +1,6 @@
 %bcond_with	encoder		# build with encoder (may require license)
 #
-Summary:	SZIP - Science Data Lossless Compression library
+Summary:	- Science Data Lossless Compression library
 Name:		szip
 Version:	2.1
 Release:	1
