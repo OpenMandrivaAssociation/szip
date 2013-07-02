@@ -1,9 +1,9 @@
 %bcond_with	encoder		# build with encoder (may require license)
 #
-Summary:	- Science Data Lossless Compression library
+Summary:	Science Data Lossless Compression library
 Name:		szip
 Version:	2.1
-Release:	1
+Release:	2
 %if %{with encoder}
 License:	free for non-commercial, scientific use only in HDF software
 %else
