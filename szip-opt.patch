@@ -61,7 +61,7 @@
      ecc)
  	CFLAGS="$CFLAGS -std=c99 -w2 -Wall"
 -	DEBUG_CFLAGS="-g -O0"
-+	DEBUG_CFLAGS="-g"
++	DEBUG_CFLAGS=""
  	DEBUG_CPPFLAGS=
  	PROD_CFLAGS=""		# ecc has -O2 as default
  	PROD_CPPFLAGS=
