@@ -7,7 +7,7 @@
 Summary:	SZIP - Science Data Lossless Compression library
 Name:		szip
 Version:	2.1
-Release:	2
+Release:	3
 %if %{with encoder}
 License:	Free for non-commercial, scientific use only in HDF software
 %else
