@@ -6,18 +6,17 @@
 
 Summary:	SZIP - Science Data Lossless Compression library
 Name:		szip
-Version:	2.1
-Release:	3
+Version:	2.1.1
+Release:	1
 %if %{with encoder}
 License:	Free for non-commercial, scientific use only in HDF software
 %else
 License:	Free for use in HDF software
 %endif
 Group:		System/Libraries
-Url:		http://hdf.ncsa.uiuc.edu/doc_resource/SZIP/
-Source0:	ftp://ftp.hdfgroup.org/lib-external/szip/%{version}/%{name}-%{version}.tar.gz
+Url:		https://support.hdfgroup.org/doc_resource/SZIP/
+Source0:	https://support.hdfgroup.org/ftp/lib-external/szip/%{version}/src/szip-%{version}.tar.gz
 Patch0:		%{name}-opt.patch
-Patch1:		%{name}-linking.patch
 BuildRequires:	libtool
 
 %description
@@ -72,9 +71,7 @@ Development files for SZIP library.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -q
-%patch0 -p1
-%patch1 -p1
+%autosetup -p1
 
 %build
 autoreconf -fi
